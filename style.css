@@ -167,6 +167,7 @@ a:hover {
 div[id='description'] {
   margin-top: 10px;
   background: url(jenkinscute.png) no-repeat;
+  background-size: contain;
   background-position: calc(100% - 30px);;
   color: #3890aa;
   -webkit-filter: invert(100%) !important;
