@@ -295,11 +295,12 @@ h1[class="job-index-headline page-headline"] {
 	border: 1px solid #939393 !important;
 }
 .cbwf-widget .alert-danger {
-	border-color: rgba(20, 176, 43, 0.8) !important;
+	border-color: rgba(0, 150, 120, 0.6) !important;
 }
 .cbwf-widget .alert-danger .btn {
-	background: rgba(0, 150, 28, 0.5) !important;
+	background: rgba(0, 150, 129, 0.5) !important;
+
 }
 #pipeline-box .table-box td.FAILED {
-	background: rgba(0, 150, 28, 0.5) !important;
+	background: rgba(0, 150, 129, 0.5) !important;
 }
