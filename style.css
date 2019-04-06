@@ -13,13 +13,13 @@ https://github.com/michael-yelnikov/jenkins-dark-hell
   font-family: 'Courier New', Courier, monospace !important;
   background: #fff9;
   padding-left: 5px;
-  color: #510000;
+  color: #000;
   border-radius: 1px;
   cursor: text;
   }
 /* takes care of console pipeline text being ugly */
 span.pipeline-new-node {
-  color: #363636 !important;
+  color: #9c0000 !important;
 }
 html {
   -webkit-filter: invert(100%) !important;
@@ -52,7 +52,7 @@ a:hover,
   border-bottom: 1px solid #ccc !important;
   }
 /* out importantancing the above */
-.console-output a, a:link, a:visited, .model-link {
+.console-output a {
   color: #510000 !important;
 }
 #header .login a,
