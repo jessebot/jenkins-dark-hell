@@ -258,3 +258,21 @@ h1[class="job-index-headline page-headline"] {
 #pipeline-box .table-box .table-viewPort tr.totals .cell-color {
 	min-height: 5.3em !important;
 }
+#pipeline-box .table-box td.SUCCESS .cell-color {
+	background: rgba(255, 45, 45, 0.2);
+}
+
+.cbwf-widget .alert-success {
+	background-color: rgba(209, 147, 147, 0.8);
+	border-color: rgba(150, 100, 100, 0.8);
+	color: rgba(0, 0, 0, 0.667);
+}
+.jobsTable .jobName .badge {
+	font-weight: normal;
+	background-color: #FFEA00;
+	font-size: 12px;
+	text-shadow: unset;
+}
+#pipeline-box .table-box .table-viewPort .stage-start .cell-box .stage-start-time {
+	box-shadow: rgba(0, 0, 0, 0.2) 0 1px 3px;
+}
