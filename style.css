@@ -17,6 +17,12 @@ https://github.com/michael-yelnikov/jenkins-dark-hell
   border-radius: 1px;
   cursor: text;
   }
+.console-output {
+	padding-left: 15px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	border-radius: 15px;
+}
 /* takes care of console pipeline text being ugly */
 span.pipeline-new-node {
   color: #9c0000 !important;
