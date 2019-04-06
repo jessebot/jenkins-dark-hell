@@ -1,11 +1,19 @@
 /*
+Forked from:
 https://github.com/michael-yelnikov/jenkins-dark-hell
+
+This fork is currently maintained at:
+https://github.com/jessebot/jenkins-dark-hell
+By JesseBot@linux.com
 */
+
 @import url('https://fonts.googleapis.com/css?family=Rubik+Mono+One');
 :root {
   --redBG: #c1f5f3;
   --redText: #6cd2d4;
   }
+
+/* build console output page */
 .console-output,
 .console-output * {
   position: relative;
@@ -22,10 +30,11 @@ https://github.com/michael-yelnikov/jenkins-dark-hell
 	padding-bottom: 10px;
 	border-radius: 15px;
 }
-/* takes care of console pipeline text being ugly */
 span.pipeline-new-node {
   color: #9c0000 !important;
 }
+
+/* all and general */
 html {
   -webkit-filter: invert(100%) !important;
   background-color: #222;
@@ -45,6 +54,8 @@ iframe {
 #side-panel {
   background: #ddd !important;
   }
+
+/* links */
 a,
 a:visited,
 .model-link,
@@ -56,10 +67,13 @@ a:hover,
 .model-link:hover {
   border-bottom: 1px solid #ccc !important;
   }
+
 /* out importantancing the above */
 .console-output a {
   color: #510000 !important;
 }
+
+/* header all the things */
 #header .login a,
 #header .login a:visited {
   color: #222 !important;
@@ -87,6 +101,7 @@ a:hover,
 .icon-red-anime .icon-lgp {
   content: url('Ripple.gif') !important;
   }
+
 /* Filed build */
 .build-status-link
 tr td [tooltip="Провалилось"],
@@ -99,6 +114,7 @@ img[title="Failed > Console Output"],
 img[title="Провалилось > Вывод консоли"] {
   content: url('fail.png') !important;
   }
+
 /* Successfully build icon */
 .build-status-link
 img[alt="Success"],
@@ -114,6 +130,7 @@ img[title = "Success > Успешно > Вывод консоли" ] {
   content: url(ok.png) !important;
   margin-right: 5px;
   }
+
 /* Red icon at job details page */
 .build-status-link img[title="In progress"],
 img[title="В процессе"] {
@@ -122,6 +139,7 @@ img[title="В процессе"] {
   height: 22px !important;
   width: 22px !important;
   }
+
 /* Gray gif at job details page */
 .build-status-link
 img[title="В процессе > Вывод консоли"],
@@ -134,6 +152,7 @@ img[alt="In progress > Console Output"],
   height: 22px !important;
   width: 22px !important;
   }
+
 /* Fire icon at build in progress */
 img[tooltip="In progress"],
 img[tooltip="В процессе"],
@@ -147,11 +166,13 @@ img[src='/static/0863560f/images/24x24/clock_anime.gif'] {
   height: 30px !important;
   width: 30px !important;
   }
+
 /*  Rss Feed Icon */
 img[alt="Feed"] {
   content: url(rss.png) !important;
   margin: 5px;
   }
+
 /* Red border disable */
 a:hover {
   border-bottom: none !important;
@@ -159,11 +180,13 @@ a:hover {
 .model-link:hover {
   border-bottom: none !important;
   }
+
 /* Search icon */
 #search-box {
   background: white url(search.png) no-repeat;
   }
-/*Welcome to hell, if it froze over*/
+
+/* Welcome to hell, if it froze over */
 div[id='description'] {
   margin-top: 10px;
   background: url(jenkinscute.png) no-repeat;
@@ -182,14 +205,19 @@ a[id="description-link"] {
   color: rgba(0, 0, 0, 0) !important;
   font-family: none !important;
   }
-/* Jenkins home */
+
+/* Jenkins home: hacky, but whatever */
 img[id="jenkins-name-icon"] {
-  content: url(jenkins.png) !important;
-  margin-left: 5px;
+  /* margin-left: 5px; */
+  display: none;
+  }
+img[id="jenkins-head-icon"] {
+  display: none;
   }
 h1[class="job-index-headline page-headline"] {
   display: none;
   }
+
 /* Textarea edit job description */
 .setting-input {
   font-family: 'Courier New', Courier, monospace !important;
@@ -202,6 +230,7 @@ h1[class="job-index-headline page-headline"] {
   background: #c1c1c1 url(../images/textarea-handle.gif) no-repeat 50% 1px;
   border: 1px solid #b1afaf;
   }
+
 /* Buttons */
 .yui-button button {
   text-decoration: none;
@@ -220,6 +249,7 @@ h1[class="job-index-headline page-headline"] {
   -webkit-tap-highlight-color: transparent;
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .16), 0 2px 10px 0 rgba(0, 0, 0, .12)
   }
+
 /* Vertical line at job history */
 .build-row.multi-line .build-row-cell .left-bar {
   position: absolute;
@@ -228,6 +258,7 @@ h1[class="job-index-headline page-headline"] {
   left: 15px !important;
   border-left: 1px solid #957373 !important;
   }
+
 /* Error blocks */
 .gradle-outcome-failure {
   color: #0bbdb0;
@@ -253,49 +284,12 @@ h1[class="job-index-headline page-headline"] {
 .securityWarning{
   color: var(--redText) !important;
 }
-#pipeline-box .table-box .table-viewPort tr.totals .cell-color {
-	min-height: 5.3em !important;
-}
-#pipeline-box .table-box td.SUCCESS .cell-color {
-	background-color: rgba(255, 22, 121, 0.3) !important;
-}
+
+/* success and danger alerts */
 .cbwf-widget .alert-success {
 	background-color: rgba(255, 22, 121, 0.3) !important;
 	border-color: rgba(150, 100, 100, 0.8) !important;
 	color: rgba(0, 0, 0, 0.667) !important;
-}
-.jobsTable .jobName .badge {
-	font-weight: normal !important;
-	background-color: #C2C2C2 !important;
-	font-size: 12px !important;
-	text-shadow: unset !important;
-}
-#pipeline-box .table-box .table-viewPort .stage-start .cell-box .stage-start-time {
-	box-shadow: rgba(0, 0, 0, 0.2) 0 1px 3px !important;
-	border: 1px solid #caa !important;
-}
-#pipeline-box .table-box tr.FAILED .cell-color {
-	background-color: rgba(0, 255, 210, 0.15) !important;
-}
-#pipeline-box .table-box tr.SUCCESS .cell-color {
-	background-color: rgba(255, 22, 121, 0.3) !important;
-}
-.jobsTable .stage-cell.FAILED .stage-wrapper {
-	color: #001b17b3 !important;
-	text-shadow: 0 1px 1px #fff !important;
-	font-weight: bold !important;
-}
-.jobsTable .stage-cell.FAILED .stage-wrapper .status {
-	color: #0d2a16 !important;
-	font-size: 1em !important;
-}
-#pipeline-box .table-box tr.FAILED .FAILED .duration {
-	background: repeating-linear-gradient(-45deg, rgba(255, 50, 0, 0.1), rgba(255, 50, 0, 0.1) 20px, rgba(255, 0, 0, 0.15) 20px, rgba(255, 0, 0, 0.15) 40px) !important;
-	box-shadow: 0 0 0 1px #3a8779 !important;
-}
-#pipeline-box .table-box .table-viewPort .stage-start .cell-box .stage-start-time {
-	box-shadow: rgba(114, 114, 114, 0.2) 0 1px 3px !important;
-	border: 1px solid #939393 !important;
 }
 .cbwf-widget .alert-danger {
 	border-color: rgba(0, 150, 120, 0.6) !important;
@@ -303,6 +297,62 @@ h1[class="job-index-headline page-headline"] {
 .cbwf-widget .alert-danger .btn {
 	background: rgba(0, 224, 192, 0.5) !important;
 }
+
+/* job table in the pipeline-box */
+.jobsTable .jobName .badge {
+	font-weight: normal !important;
+	background-color: #C2C2C2 !important;
+	font-size: 12px !important;
+	text-shadow: unset !important;
+}
+.jobsTable .stage-cell.FAILED .stage-wrapper {
+	color: #001b17b3 !important;
+	text-shadow: 0 1px 1px #fff !important;
+	font-weight: bold !important;
+}
+.jobsTable .stage-cell.FAILED .stage-wrapper .status {
+    color: #0e3f3d99 !important;
+    font-size: 1.1em !important;
+	bottom: 4px;
+	right: 6px;
+}
+
+/* pipeline-box: all cells */
+#pipeline-box .table-box .table-viewPort tr.totals .stage-start .cell-color {
+	text-align: center !important;
+	margin: 2px 0 0 !important;
+	color: #2c2c2c !important;
+	font-weight: normal !important;
+}
+#pipeline-box .table-box .table-viewPort tr.totals .cell-color {
+	min-height: 5.3em !important;
+}
+#pipeline-box .table-box .table-viewPort .stage-start .cell-box .stage-start-time {
+	box-shadow: rgba(114, 114, 114, 0.2) 0 1px 3px !important;
+	border: 1px solid #caa !important;
+	background: #ccc !important;
+}
+#pipeline-box .table-box tr td .duration {
+    color: #000;
+    font-weight: bold;
+}
+
+/* pipeline-box: SUCCESS cells */
+#pipeline-box .table-box td.SUCCESS .cell-color {
+	background-color: rgba(255, 22, 121, 0.3) !important;
+}
+
+/* pipeline-box: FAILURE cells */
+#pipeline-box .table-box tr.FAILED .cell-color {
+    background-color: rgba(0, 255, 244, 0.2) !important;
+}
+#pipeline-box .table-box tr.FAILED .FAILED .duration {
+	background: repeating-linear-gradient(-45deg, rgba(255, 50, 0, 0.1), rgba(255, 50, 0, 0.1) 20px, rgba(255, 0, 0, 0.15) 20px, rgba(255, 0, 0, 0.15) 40px) !important;
+	box-shadow: 0 0 0 1px #3a8779 !important;
+}
 #pipeline-box .table-box td.FAILED {
-	background: rgba(0, 224, 192, 0.5) !important;
+	background: rgba(0, 255, 216, 0.17) !important;
+}
+#pipeline-box .table-box tr.FAILED .FAILED .duration span {
+    opacity: .7 !important;
 }
