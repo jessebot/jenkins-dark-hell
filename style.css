@@ -243,7 +243,7 @@ h1[class="job-index-headline page-headline"] {
 	padding: .33em 1em;
 	margin: 2px 0 0;
 	background: none;
-	color: rgba(0, 0, 0, 0.5);
+	color: rgba(0, 0, 0, 0.5) !important;
 	font-weight: bold;
 	overflow: hidden;
 }
