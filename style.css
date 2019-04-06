@@ -252,9 +252,6 @@ h1[class="job-index-headline page-headline"] {
 .securityWarning{
   color: var(--redText) !important;
 }
-#pipeline-box .table-box .table-viewPort tr.totals .stage-start .cell-color {
-	color: rgba(0, 0, 0, 0.6) !important;
-}
 #pipeline-box .table-box .table-viewPort tr.totals .cell-color {
 	min-height: 5.3em !important;
 }
@@ -290,5 +287,16 @@ h1[class="job-index-headline page-headline"] {
 	font-size: 1em !important;
 }
 #pipeline-box .table-box tr.FAILED .FAILED .duration {
-	background: repeating-linear-gradient(-45deg, rgba(0, 255, 21, 0.1), rgba(0, 255, 12, 0.1) 20px, rgba(15, 255, 0, 0.2) 20px, rgba(69, 255, 0, 0.2) 40px) !important;
+	background: repeating-linear-gradient(-45deg, rgba(255, 50, 0, 0.1), rgba(255, 50, 0, 0.1) 20px, rgba(255, 0, 0, 0.15) 20px, rgba(255, 0, 0, 0.15) 40px) !important;
+	box-shadow: 0 0 0 1px #3a8779 !important;
+}
+#pipeline-box .table-box .table-viewPort .stage-start .cell-box .stage-start-time {
+	box-shadow: rgba(114, 114, 114, 0.2) 0 1px 3px !important;
+	border: 1px solid #939393 !important;
+}
+.cbwf-widget .alert-danger {
+	border-color: rgba(20, 176, 43, 0.8) !important;
+}
+.cbwf-widget .alert-danger .btn {
+	background: rgba(0, 150, 28, 0.5) !important;
 }
