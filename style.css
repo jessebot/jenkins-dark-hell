@@ -166,7 +166,7 @@ a:hover {
 /*Welcome to hell, if it froze over*/
 div[id='description'] {
   margin-top: 10px;
-  background: url(hell.png) no-repeat;
+  background: url(jenkinscute.png) no-repeat;
   background-position: calc(100% - 30px);;
   color: #3890aa;
   -webkit-filter: invert(100%) !important;
