@@ -275,7 +275,7 @@ h1[class="job-index-headline page-headline"] {
 	border: 1px solid #caa !important;
 }
 #pipeline-box .table-box tr.FAILED .cell-color {
-	background: rgba(0, 255, 3, 0.1) !important;
+	background: rgba(0, 255, 138, 0.1) !important
 }
 .jobsTable .stage-cell.FAILED .stage-wrapper {
 	color: #000 !important;
@@ -298,5 +298,8 @@ h1[class="job-index-headline page-headline"] {
 	border-color: rgba(20, 176, 43, 0.8) !important;
 }
 .cbwf-widget .alert-danger .btn {
+	background: rgba(0, 150, 28, 0.5) !important;
+}
+#pipeline-box .table-box td.FAILED {
 	background: rgba(0, 150, 28, 0.5) !important;
 }
