@@ -1,7 +1,6 @@
 /*
 https://github.com/michael-yelnikov/jenkins-dark-hell
 */
-@import url('https://fonts.googleapis.com/css?family=Nosifer');
 @import url('https://fonts.googleapis.com/css?family=Rubik+Mono+One');
 :root {
   --redBG: #c1f5f3;
@@ -51,7 +50,7 @@ a:visited,
 .model-link,
 a:link {
   text-decoration: none !important;
-  color: #957373 !important;
+  color: #ab624b !important;
   }
 a:hover,
 .model-link:hover {
@@ -164,16 +163,17 @@ a:hover {
 #search-box {
   background: white url(search.png) no-repeat;
   }
-/*Welcome to hell*/
+/*Welcome to hell, if it froze over*/
 div[id='description'] {
-  margin-top: 5px;
+  margin-top: 10px;
   background: url(hell.png) no-repeat;
   background-position: calc(100% - 30px);;
-  color: #9c1d1e;
+  color: #3890aa;
   -webkit-filter: invert(100%) !important;
-  padding-bottom: 40px;
-  font-size: 20px;
-  font-family: 'Nosifer', 'Rubik Mono One', cursive;
+  padding-bottom: 35px;
+  font-size: 22px;
+  font-family: 'helvetica';
+  font-weight: lighter;
   }
 a[id="description-link"] {
   -webkit-filter: invert(100%) !important;
