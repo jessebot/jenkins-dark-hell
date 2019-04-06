@@ -17,6 +17,13 @@ https://github.com/michael-yelnikov/jenkins-dark-hell
   border-radius: 1px;
   cursor: text;
   }
+.console-output a, a:link, a:visited, .model-link {
+  color: #510000 !important;
+}
+/* takes care of console pipeline text being ugly */
+span.pipeline-new-node {
+  color: #363636;
+}
 html {
   -webkit-filter: invert(100%) !important;
   background-color: #222;
