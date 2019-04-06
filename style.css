@@ -256,11 +256,10 @@ h1[class="job-index-headline page-headline"] {
 	min-height: 5.3em !important;
 }
 #pipeline-box .table-box td.SUCCESS .cell-color {
-	background: rgba(255, 45, 45, 0.2) !important;
+	background-color: rgba(255, 22, 121, 0.3) !important;
 }
-
 .cbwf-widget .alert-success {
-	background-color: rgba(209, 147, 147, 0.8) !important;
+	background-color: rgba(255, 22, 121, 0.3) !important;
 	border-color: rgba(150, 100, 100, 0.8) !important;
 	color: rgba(0, 0, 0, 0.667) !important;
 }
@@ -275,10 +274,13 @@ h1[class="job-index-headline page-headline"] {
 	border: 1px solid #caa !important;
 }
 #pipeline-box .table-box tr.FAILED .cell-color {
-	background: rgba(0, 255, 138, 0.1) !important
+	background-color: rgba(0, 255, 210, 0.15) !important;
+}
+#pipeline-box .table-box tr.SUCCESS .cell-color {
+	background-color: rgba(255, 22, 121, 0.3) !important;
 }
 .jobsTable .stage-cell.FAILED .stage-wrapper {
-	color: #000 !important;
+	color: #001b17b3 !important;
 	text-shadow: 0 1px 1px #fff !important;
 	font-weight: bold !important;
 }
