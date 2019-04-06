@@ -11,9 +11,9 @@ https://github.com/michael-yelnikov/jenkins-dark-hell
 .console-output * {
   position: relative;
   font-family: 'Courier New', Courier, monospace !important;
-  background: #0000009c;
+  background: #fff9;
   padding-left: 5px;
-  color: #fff;
+  color: #510000;
   border-radius: 1px;
   cursor: text;
   }
