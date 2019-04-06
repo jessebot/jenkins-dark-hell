@@ -239,11 +239,8 @@ h1[class="job-index-headline page-headline"] {
   color: var(--redText) !important;
 }
 #pipeline-box .table-box .table-viewPort tr.totals .stage-start .cell-color {
-	text-align: right;
-	padding: .33em 1em;
-	margin: 2px 0 0;
-	background: none;
-	color: rgba(0, 0, 0, 0.5) !important;
-	font-weight: bold;
-	overflow: hidden;
+	color: rgba(0, 0, 0, 0.6) !important;
+}
+#pipeline-box .table-box .table-viewPort tr.totals .cell-color {
+	min-height: 5.3em !important;
 }
