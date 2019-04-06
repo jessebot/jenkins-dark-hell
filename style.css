@@ -76,7 +76,7 @@ a:hover,
 /* header all the things */
 #header .login a,
 #header .login a:visited {
-  color: #222 !important;
+  color: #767676 !important;
   }
 .inverse {
   color: #000 !important;
@@ -212,7 +212,8 @@ img[id="jenkins-name-icon"] {
   display: none;
   }
 img[id="jenkins-head-icon"] {
-  display: none;
+  bottom: -6px;
+  height: 45px;
   }
 h1[class="job-index-headline page-headline"] {
   display: none;
