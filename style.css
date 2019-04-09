@@ -206,13 +206,12 @@ a[id="description-link"] {
   font-family: none !important;
   }
 
-/* Jenkins home: hacky, but whatever */
+/* Jenkins home: hacky, but whatever, still requires js as well */
 img[id="jenkins-name-icon"] {
-  /* margin-left: 5px; */
   display: none;
   }
 img[id="jenkins-head-icon"] {
-  bottom: -6px;
+  bottom: -6px !important;
   height: 45px;
   }
 h1[class="job-index-headline page-headline"] {
