@@ -1,6 +1,4 @@
 // ::shrug::
-$(document).ready(
-    function() {
-      document.getElementById("jenkins-head-icon").src="https://jessebot.github.io/jenkins-dark-hell/jenkinscute.png";
-    }
-);
+document.addEventListener("DOMContentLoaded", function(event) { 
+  document.getElementById("jenkins-head-icon").src="https://jessebot.github.io/jenkins-dark-hell/jenkinscute.png";
+});
