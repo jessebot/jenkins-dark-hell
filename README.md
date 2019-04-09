@@ -11,5 +11,6 @@ Forked from michael-yelnikov's jenkins-dark-hell
 - Input Javascript URL ```https://jessebot.github.io/jenkins-dark-hell/style.js``` to -> URL of theme Javascript
 - Click Save :blush:
  
-
+#### Here's what it looks like
 ![view](https://jessebot.github.io/jenkins-dark-hell/view.png)
+![view](https://jessebot.github.io/jenkins-dark-hell/view_console.png)
