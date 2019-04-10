@@ -2,6 +2,8 @@
 ## Jenkins Shady Hell Theme
 Forked from michael-yelnikov's jenkins-dark-hell
 
+I'm not sure who to credit for the cute jenkins logo, but I found it here: [link](https://jenkins.io/artwork/)
+
 ###### How to install:
 
 - Install the Simple Theme Plugin on your Jenkins Server: [link](https://wiki.jenkins.io/display/JENKINS/Simple+Theme+Plugin)
@@ -11,6 +13,6 @@ Forked from michael-yelnikov's jenkins-dark-hell
 - Input Javascript URL ```https://jessebot.github.io/jenkins-dark-hell/style.js``` to -> URL of theme Javascript
 - Click Save :blush:
  
-#### Here's what it looks like
+##### Screenshots
 ![view](https://jessebot.github.io/jenkins-dark-hell/view.png)
 ![view](https://jessebot.github.io/jenkins-dark-hell/view_console.png)
